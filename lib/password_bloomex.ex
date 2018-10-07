@@ -3,6 +3,8 @@ defmodule PasswordBloomex do
   Documentation for PasswordBloomex.
   """
 
+  IO.puts "Started BloomFilter Creation compilation at #{DateTime.utc_now}"
+
   @base_capacity 1000000
 
   final_filter =
@@ -13,6 +15,9 @@ defmodule PasswordBloomex do
     |> Enum.reduce(Bloomex.scalable(@base_capacity, 0.1, 0.1, 2, &(Murmur.hash_x86_128(&1))), &Bloomex.add(&2, &1))
 
   @filter final_filter
+
+
+  IO.puts "Finished BloomFilter Creation compilation at #{DateTime.utc_now}"
 
 
   def compiletime_filter do
