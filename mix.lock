@@ -1,0 +1,4 @@
+%{
+  "bloomex": {:hex, :bloomex, "1.0.5", "4d4b366412270e1fdb0c93f9f376f93f360b1b18514ac97915b43f9f9c6025f3", [:mix], [], "hexpm"},
+  "murmur": {:hex, :murmur, "1.0.1", "a6e6bced2dd0d666090a9cf3e73699f3b9176bbcf32d35b0f022f137667608e3", [:mix], [], "hexpm"},
+}
